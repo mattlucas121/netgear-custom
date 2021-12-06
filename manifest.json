@@ -1,0 +1,15 @@
+{
+  "domain": "netgear-custom",
+  "name": "NETGEAR-CUSTOM",
+  "documentation": "https://www.home-assistant.io/integrations/netgear",
+  "requirements": ["pynetgear==git+https://github.com/mattlucas121/pynetgear.git"],
+  "codeowners": ["@hacf-fr", "@Quentame", "@starkillerOG"],
+  "iot_class": "local_polling",
+  "config_flow": true,
+  "ssdp": [
+    {
+      "manufacturer": "NETGEAR, Inc.",
+      "deviceType": "urn:schemas-upnp-org:device:InternetGatewayDevice:1"
+    }
+  ]
+}
